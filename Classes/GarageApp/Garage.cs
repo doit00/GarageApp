@@ -28,6 +28,10 @@ namespace GarageApp
                 return cars.Count;
             }
         }
+        public List<Car> GetAllCars()
+        {
+            return cars;
+        }
 
     }
 }

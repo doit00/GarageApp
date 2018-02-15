@@ -14,7 +14,19 @@ namespace GarageApp
             var car1 = myGarage[0];
             var count = myGarage.CarCount;
 
+            var allCars = myGarage.GetAllCars();
+
+            //IComparable
+            allCars.Sort();
+
+            //IComparer
+            IComparer<Car> makeComparer = new CarMakeComparer();
+            allCars.Sort(makeComparer);
+
+
 
         }
     }
+
+
 }

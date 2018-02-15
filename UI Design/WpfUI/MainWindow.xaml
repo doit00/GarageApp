@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="CanvasBasicStyle" TargetType="{x:Type Canvas}"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="117*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="237*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="1" Grid.Row="2" Content="OK"></Button>
+        <Canvas Grid.Column="0" Grid.Row="2" Background="Yellow" Style="{DynamicResource CanvasBasicStyle}">
+            <Button Canvas.Left="10" Canvas.Top="10" Width="30" Height="20" Content="OK">
+
+            </Button>
+        </Canvas>
+        <StackPanel>
+            <Button Content="OK"></Button>
+            <Button Content="OK"></Button>
+            <Button Content="OK"></Button>
+            <Button Content="OK"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
