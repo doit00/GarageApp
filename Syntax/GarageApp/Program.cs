@@ -10,6 +10,14 @@ namespace GarageApp
     {
         static void Main(string[] args)
         {
+            //int - System.Int32
+            int NumberOfEmployees = 1000;
+            int Seats = 1141;
+            var Remaining = Seats - NumberOfEmployees;
+
+            Console.WriteLine(Remaining);
+
+
         }
     }
 }
